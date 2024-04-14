@@ -1,6 +1,5 @@
 .App {
 
-
   justify-content: center;
   align-items: center;
   margin-left: auto;
@@ -9,6 +8,10 @@
   height: fit-content;
   
 
+}
+section{
+  display: flex;
+  justify-content: space-between;
 }
 
 /* .App-logo {
