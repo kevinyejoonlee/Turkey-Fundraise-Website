@@ -15,13 +15,14 @@ export const Values = () => {
       .then(text => {
         const value = text.trim().replace(/["$,]+/g, '').slice(0, -3);
         setCellData(value);
+
       })
       .catch(error => console.error('Error fetching data: ', error));
   }, []); 
 
   return (
     <div className='values_container'>
-      <div className='value'><b>Goal:</b> $3500</div>
+      <div className='value'><b>My Goal:</b> $3500</div>
       <div className='value'><b>Raised:</b> ${cellData}</div>
       <div className='value'><b>Percentage:</b> {(cellData / 3500).toFixed(2) * 100}%</div>
       <div className='value'><b>To Go:</b> ${3500-cellData} </div>

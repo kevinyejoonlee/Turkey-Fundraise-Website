@@ -1,6 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import "./Graph.css";
 
+import {
+  Chart as ChartJS, ArcElement,
+  Tooltip,
+  Legend
+} from 'chart.js';
+import { Doughnut } from 'react-chartjs-2';
+
+ChartJS.register(
+  ArcElement,
+  Tooltip,
+  Legend
+);
+
 const Graph = () => {
   const [cellData, setCellData] = useState('');
 
@@ -14,28 +27,50 @@ const Graph = () => {
       .then(response => response.text())
       .then(text => {
         const value = text.trim().replace(/["$,]+/g, '').slice(0, -3);
-        setCellData(value); 
-        // console.log(value);
+        setCellData(parseFloat(value)); 
       })
       .catch(error => console.error('Error fetching data: ', error));
   }, []); 
 
+  const Percentage = (cellData / 3500).toFixed(2) * 100;
+  const data = {
+    datasets: [
+      {
+        label: 'Fundraising',
+        data: [Percentage, 100 - Percentage],
+        backgroundColor: ['rgb(24,179,166)', 'rgb(238,238,238)'],
+        borderColor: ['rgb(24,179,166)', 'rgb(238,238,238)'],
+        borderWidth: 1
+      }
+    ],
+    labels: ['Raised', 'Remaining']
+  };
+
+  const options = {
+    cutout: '80%',
+    plugins: {
+      legend: {
+        display: false
+      },
+      tooltip: {
+        callbacks: {
+          label: function(tooltipItem) {
+            let label = data.labels[tooltipItem.dataIndex];
+            let value = data.datasets[0].data[tooltipItem.dataIndex];
+            if (label === 'Remaining') {
+              return ` ${value}%`;
+            } else {
+              return ` ${value}%`;
+            }
+          }
+        }
+      }
+    }
+  };
 
   return (
     <div className="graph_container">
-      {/* <p>{cellData}</p> */}
-
-
-        <div className="outer">
-          <div className="inner">
-            <div className="number">
-              {(cellData/3500).toFixed(2) * 100}%
-            </div>
-          </div>
-        </div>
-
- 
-
+      <Doughnut className="graph" data={data} options={options} />
     </div>
   );
 }
