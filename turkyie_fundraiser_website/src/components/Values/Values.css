@@ -1,0 +1,16 @@
+.values_container{
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    margin-top: 50px;
+}
+
+.value {
+
+}
+
+.value b{
+
+}
