@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Turkey-Fundraise-Website/static/css/main.7987b75c.css",
-    "main.js": "/Turkey-Fundraise-Website/static/js/main.126f498b.js",
-    "static/media/pngtree-clipping-path-included-white-background-turkey-map-shiny-png-image_11272724.png": "/Turkey-Fundraise-Website/static/media/pngtree-clipping-path-included-white-background-turkey-map-shiny-png-image_11272724.eae3f049c71229f13560.png",
-    "index.html": "/Turkey-Fundraise-Website/index.html",
-    "main.7987b75c.css.map": "/Turkey-Fundraise-Website/static/css/main.7987b75c.css.map",
-    "main.126f498b.js.map": "/Turkey-Fundraise-Website/static/js/main.126f498b.js.map"
+    "main.css": "/turkyie_fundraiser_website/static/css/main.7987b75c.css",
+    "main.js": "/turkyie_fundraiser_website/static/js/main.b6c856ca.js",
+    "static/media/pngtree-clipping-path-included-white-background-turkey-map-shiny-png-image_11272724.png": "/turkyie_fundraiser_website/static/media/pngtree-clipping-path-included-white-background-turkey-map-shiny-png-image_11272724.eae3f049c71229f13560.png",
+    "index.html": "/turkyie_fundraiser_website/index.html",
+    "main.7987b75c.css.map": "/turkyie_fundraiser_website/static/css/main.7987b75c.css.map",
+    "main.b6c856ca.js.map": "/turkyie_fundraiser_website/static/js/main.b6c856ca.js.map"
   },
   "entrypoints": [
     "static/css/main.7987b75c.css",
-    "static/js/main.126f498b.js"
+    "static/js/main.b6c856ca.js"
   ]
 }
