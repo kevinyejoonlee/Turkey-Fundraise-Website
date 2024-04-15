@@ -69,7 +69,7 @@ const Graph = () => {
   };
 
   return (
-    <div className="graph_container">
+    <div>
       <Doughnut className="graph" data={data} options={options} />
     </div>
   );
