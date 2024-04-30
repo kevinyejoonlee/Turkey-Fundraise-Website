@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Turkey-Fundraise-Website/static/css/main.6d3466e1.css",
-    "main.js": "/Turkey-Fundraise-Website/static/js/main.c48037e9.js",
+    "main.js": "/Turkey-Fundraise-Website/static/js/main.53b90c4d.js",
     "static/media/pngtree-clipping-path-included-white-background-turkey-map-shiny-png-image_11272724.png": "/Turkey-Fundraise-Website/static/media/pngtree-clipping-path-included-white-background-turkey-map-shiny-png-image_11272724.eae3f049c71229f13560.png",
     "index.html": "/Turkey-Fundraise-Website/index.html",
     "main.6d3466e1.css.map": "/Turkey-Fundraise-Website/static/css/main.6d3466e1.css.map",
-    "main.c48037e9.js.map": "/Turkey-Fundraise-Website/static/js/main.c48037e9.js.map"
+    "main.53b90c4d.js.map": "/Turkey-Fundraise-Website/static/js/main.53b90c4d.js.map"
   },
   "entrypoints": [
     "static/css/main.6d3466e1.css",
-    "static/js/main.c48037e9.js"
+    "static/js/main.53b90c4d.js"
   ]
 }
