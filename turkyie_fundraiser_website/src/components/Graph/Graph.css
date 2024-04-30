@@ -1,7 +1,18 @@
 
 
 .graph{
+
     margin-top: 50px;
-    width: 26vw;
-    height: 26vw;
+
+
+    width: 26vw;  
+
+    width: auto;  
+}
+
+@media (max-width: 800px) {
+    .graph{
+        width: auto;  
+    }
+    
 }

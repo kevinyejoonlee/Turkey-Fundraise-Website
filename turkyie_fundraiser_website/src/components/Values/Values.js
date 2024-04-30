@@ -25,7 +25,7 @@ export const Values = () => {
       <div className='value'><b>My Goal:</b> $3500</div>
       <div className='value'><b>Raised:</b> ${cellData}</div>
       <div className='value'><b>Percentage:</b> {(cellData / 3500).toFixed(2) * 100}%</div>
-      <div className='value'><b>To Go:</b> ${3500-cellData} </div>
+      <div className='value'><b>Need:</b> ${3500-cellData} </div>
     </div>
   )
 }

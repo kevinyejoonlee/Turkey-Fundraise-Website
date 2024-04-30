@@ -40,7 +40,7 @@ const Graph = () => {
         data: [Percentage, 100 - Percentage],
         backgroundColor: ['rgb(24,179,166)', 'rgb(238,238,238)'],
         borderColor: ['rgb(24,179,166)', 'rgb(238,238,238)'],
-        borderWidth: 1
+
       }
     ],
     labels: ['Raised', 'Remaining']

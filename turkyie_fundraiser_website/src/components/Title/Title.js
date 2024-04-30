@@ -5,7 +5,7 @@ import turkey from "../../assets/pngtree-clipping-path-included-white-background
 
 export const Title = () => {
   return (
-    <div className='title'>Project Türkyie 🇹🇷 </div>
+    <div className='title'>Project Türkiye 🇹🇷 </div>
   )
 }
 
