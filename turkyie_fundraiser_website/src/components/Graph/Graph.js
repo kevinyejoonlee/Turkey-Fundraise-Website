@@ -20,7 +20,7 @@ const Graph = () => {
   useEffect(() => {
     const SHEET_ID = '1bEHm_SZduQwu0sbtTV1NZmsfm0axtHdIulpbm6M6QC0';
     const SHEET_TITLE = 'Fundraising Progress'; 
-    const SHEET_RANGE = 'J18';
+    const SHEET_RANGE = 'J17';
     const FULL_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?sheet=${SHEET_TITLE}&range=${SHEET_RANGE}&tqx=out:csv`;
 
     fetch(FULL_URL)
