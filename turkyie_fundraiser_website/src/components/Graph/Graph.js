@@ -69,8 +69,8 @@ const Graph = () => {
   };
 
   return (
-    <div>
-      <Doughnut className="graph" data={data} options={options} />
+    <div className="graph">
+      <Doughnut data={data} options={options} />
     </div>
   );
 }
